@@ -1,0 +1,186 @@
+Naravno! Evo detaljnijih i ljepše sročenih odgovora na sva pitanja, tako da ti mogu poslužiti i kao priprema za usmeni ispit ili za pisanje:
+
+---
+
+## ✅ **Zadatak 1**
+
+### **a) Pretraživanje u širinu (BFS – Breadth First Search)**
+
+To je algoritam koji pretražuje graf tako što prvo istražuje sve čvorove na trenutnoj dubini prije nego što pređe na čvorove dublje razine.
+**Princip rada:**
+
+1. Počinje od početnog čvora.
+2. U sve susjedne čvorove ide jedan po jedan.
+3. Tek kad obiđe sve susjede, prelazi na njihove susjede.
+
+**Primjer:**
+Zamislimo da želimo pronaći najkraći put do sobe u lavirintu. BFS će prvo obići sve prostorije koje su jedan korak udaljene, zatim one koje su dva koraka, itd.
+✅ **Prednost**: Pronalazi najkraći put.
+❌ **Nedostatak**: Troši puno memorije.
+
+---
+
+### **b) Pretraživanje u dubinu (DFS – Depth First Search)**
+
+DFS ide što dublje moguće u jednom pravcu prije nego što se vrati nazad i istraži drugi smjer.
+
+**Princip rada:**
+
+1. Počinje od početnog čvora.
+2. Ide što dublje može jednim putem.
+3. Kada naiđe na kraj, vraća se i istražuje drugi put.
+
+**Primjer:**
+U istom lavirintu, DFS ide pravo dok ne naiđe na zid, pa se vraća i pokušava drugi put.
+✅ **Prednost**: Manje memorije.
+❌ **Nedostatak**: Ne garantira najkraći put.
+
+---
+
+### **c) Perceptron**
+
+Perceptron je osnovna jedinica neuronske mreže i predstavlja najjednostavniji oblik umjetnog neurona. Koristi se za binarnu klasifikaciju.
+
+**Princip rada:**
+
+1. Svakom ulazu dodijelimo težinu.
+2. Izračunamo sumu:
+   $z = w_1x_1 + w_2x_2 + ... + w_nx_n + b$
+3. Rezultat se šalje kroz aktivacijsku funkciju (npr. step funkcija).
+4. Izlaz je obično 0 ili 1.
+
+**Primjena:** npr. klasifikacija poruke kao spam ili ne-spam.
+
+---
+
+### **d) Backpropagation algoritam**
+
+To je algoritam učenja koji omogućava višeslojnim neuronskim mrežama da uče iz grešaka.
+
+**Princip rada:**
+
+1. Izvrši se **forward pass** – izračuna se izlaz mreže.
+2. Izračuna se greška (npr. razlika između stvarnog i očekivanog izlaza).
+3. Greška se **propagira unazad** kroz mrežu koristeći lančanu derivaciju (gradijent).
+4. Težine se prilagođavaju da bi se greška smanjila.
+
+**Koristi se uz algoritam gradijentnog spusta.**
+Bez backpropagationa, današnje duboke mreže ne bi bile moguće.
+
+---
+
+### **e) Aktivacijske funkcije kod neuronskih mreža**
+
+One određuju kako će neuron reagovati na ulaz. Daju mreži sposobnost da modelira nelinearne odnose.
+
+#### **Primjeri:**
+
+* **Sigmoid funkcija**
+  $f(x) = \frac{1}{1 + e^{-x}}$
+  Raspon vrijednosti: (0, 1). Koristi se kada želimo vjerovatnoću.
+
+* **ReLU (Rectified Linear Unit)**
+  $f(x) = \max(0, x)$
+  Jedna od najčešće korištenih funkcija danas zbog efikasnosti.
+
+* **Tanh (hyperbolic tangent)**
+  $f(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}$
+  Raspon: (−1, 1)
+
+**Uloga:** Bez njih, neuronske mreže bi mogle modelirati samo linearne funkcije, što je vrlo ograničeno.
+
+---
+
+Nastavljam u sljedećoj poruci sa **Zadatkom 3 i 4**.
+  Naravno! Nastavljamo detaljno:
+
+---
+
+## ✅ **Zadatak 3**
+
+### **a) Alfa-presjek i jezgra fuzzy skupa**
+
+* **Fuzzy skup** je takav skup gdje elementi imaju stepen pripadnosti između 0 i 1.
+
+* **Alfa-presjek** fuzzy skupa za neki alfa ∈ \[0,1] je klasični skup koji sadrži sve elemente fuzzy skupa čiji stepen pripadnosti je **veći ili jednak** od alfa.
+  **Primjer:** Ako element x ima stepen pripadnosti 0.8, a alfa=0.7 → x ulazi u alfa-presjek.
+
+* **Jezgra fuzzy skupa** (engl. core) je **podskup svih elemenata** fuzzy skupa koji imaju **maksimalni stepen pripadnosti, tj. 1**.
+
+✅ Koristi se za pojednostavljivanje fuzzy skupova, npr. kod odlučivanja.
+
+---
+
+### **b) Područja primjene genetskih algoritama i adaptivnog fuzzy regulatora**
+
+* **Genetski algoritmi** su inspirisani evolucijom i koriste se za traženje optimalnih rješenja.
+  **Primjene:**
+
+  * Optimizacija parametara (npr. raspored proizvodnje)
+  * Treniranje neuronskih mreža
+  * Problemi sa velikim brojem rješenja
+
+* **Adaptivni fuzzy regulator** je sistem koji koristi fuzzy logiku za upravljanje, ali koji se **automatski prilagođava** promjenama u okolini.
+  **Primjena:**
+
+  * Klime, grijanje, pametni sistemi
+  * Automobilska elektronika
+  * Upravljanje robotima
+
+---
+
+### **c) Šta je fuzzy skup, lingvistička varijabla i primjer**
+
+* **Fuzzy skup**: Umjesto da element pripada ili ne pripada skupu, ovdje ima **stepen pripadnosti** (npr. 0.3, 0.7).
+* **Lingvistička varijabla**: To je varijabla čije su vrijednosti izražene riječima.
+  **Primjer:** Varijabla *temperatura* ima vrijednosti: *hladno, umjereno, toplo, vruće*.
+
+🔶 **Primjer iz realnog života**:
+Mjerenje temperature u pametnom termostatu:
+
+* 20°C može imati 0.8 pripadnosti skupu “umjereno” i 0.3 skupu “toplo”.
+
+---
+
+## ✅ **Zadatak 4**
+
+### **a) Faziﬁkacija, zaključivanje, kompozicija i defaziﬁkacija**
+
+1. **Fazifikacija** – pretvaranje ulaznih vrijednosti u fuzzy skupove (npr. brojčana temperatura → “hladno”)
+2. **Zaključivanje (inferencija)** – primjena fuzzy pravila na fazifikovane vrijednosti
+3. **Kompozicija** – kombinovanje rezultata iz više fuzzy pravila
+4. **Defazifikacija** – pretvaranje fuzzy izlaza u konkretan broj (npr. 0.75 “toplo” → 22.5°C)
+
+🔶 **Koraci su neophodni kod fuzzy kontrolera.**
+
+---
+
+### **b) Definisati fuzzy skup “brojevi oko 4” i prikazati grafički**
+
+* **Univerzalni skup**: U = {1, 2, 3, 4, 5, 6, 7, 8}
+* **Funkcija pripadnosti** (simetrična):
+
+  * µ(4) = 1
+  * µ(3) = µ(5) = 0.7
+  * µ(2) = µ(6) = 0.4
+  * µ(1) = µ(7) = 0.2
+  * µ(8) = 0
+
+**Graf:** Os x – brojevi, os y – stepen pripadnosti. Na sredini (4) je maksimum, ide simetrično prema krajevima.
+
+---
+
+### **c) Kardinalni i relativni kardinalni broj fuzzy skupa “oko 4”**
+
+* **Kardinalni broj fuzzy skupa**:
+  Zbir svih vrijednosti pripadnosti
+  \= 0.2 + 0.4 + 0.7 + 1 + 0.7 + 0.4 + 0.2 + 0 = **3.6**
+
+* **Relativni kardinalni broj**:
+  \= $\frac{3.6}{8} = 0.45$
+  (gdje je 8 broj elemenata u univerzalnom skupu)
+
+---
+
+U sljedećoj poruci slijede **Zadatak 6 i 7**.
+
