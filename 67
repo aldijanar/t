@@ -1,0 +1,126 @@
+✅ Zadatak 6
+a) Podjela neuronskih mreža sa aspekta učenja
+Neuronske mreže se mogu podijeliti prema načinu učenja:
+
+Supervizirano učenje
+
+Mreža uči iz unaprijed poznatih parova ulaz–izlaz.
+
+Cilj je minimizirati grešku između stvarnog i očekivanog izlaza.
+
+Primjeri: klasifikacija slika, prepoznavanje glasa.
+
+Nadzirano (unsupervised) učenje
+
+Ulazni podaci nemaju poznate izlaze.
+
+Cilj je prepoznati obrasce, grupe (klastere), strukture.
+
+Primjeri: klasterovanje korisnika u marketingu.
+
+Učenje pojačanjem (reinforcement learning)
+
+Mreža uči kroz nagrade i kazne.
+
+Koristi se u igrama, robotici, automatizaciji.
+
+b) Dimenzionalnost neuronskih mreža
+Određuje se brojem slojeva i brojem neurona u svakom sloju.
+
+Obično se izražava kao npr. 3-5-2:
+
+3 ulazna neurona
+
+5 skrivenih neurona
+
+2 izlazna neurona
+
+Više dimenzija daje mreži veću moć da modelira složene funkcije, ali povećava potrebu za podacima i obradu.
+
+c) Prenosna funkcija višeslojne linearne mreže
+Prenosna funkcija određuje kako se ulaz neurona pretvara u njegov izlaz.
+
+Ako se koristi samo linearna funkcija 
+𝑓
+(
+𝑥
+)
+=
+𝑥
+f(x)=x, mreža je ograničena samo na modeliranje linearnih odnosa.
+
+Zato se dodaju nelinearne aktivacijske funkcije kao što su ReLU, sigmoid, tanh.
+
+Bez nelinearnosti, višeslojna mreža bi bila ekvivalentna jednoslojnoj.
+
+d) Genetička mutacija i njene glavne karakteristike
+Genetička mutacija je mehanizam u genetskim algoritmima kojim se slučajno mijenja dio rješenja (npr. zamijeni se jedan bit, broj ili parametar).
+
+Cilj je održati raznolikost populacije i izbjeći lokalne minimume.
+
+🔶 Glavne karakteristike mutacije:
+
+Nasumična je
+
+Mala vjerovatnoća (obično ispod 5%)
+
+Unosi nove informacije u populaciju
+
+Kombinuje se sa selekcijom i ukrštanjem
+
+✅ Zadatak 7
+a) Koji su oblici izvođenja zaključaka iz procesa učenja iz podataka?
+Deduktivno zaključivanje
+
+Od općeg ka konkretnom
+
+Primjer: "Svi ljudi su smrtni → Petar je čovjek → Petar je smrtan"
+
+Induktivno zaključivanje
+
+Od pojedinačnih slučajeva ka općim pravilima
+
+Primjer: Na osnovu više slika psa, nauči se pravilo šta je pas.
+
+Abduktivno zaključivanje
+
+Najvjerovatnije objašnjenje na osnovu raspoloživih podataka
+
+Primjer: Ako je ulica mokra, možda je padala kiša.
+
+U mašinskom učenju najčešće se koristi induktivno zaključivanje.
+
+b) Visina fuzzy skupa i njegova normalizacija
+Visina fuzzy skupa je najveća vrijednost pripadnosti u tom skupu (maksimum funkcije pripadnosti).
+
+Normalizacija fuzzy skupa podrazumijeva prilagođavanje vrijednosti tako da maksimalna vrijednost bude 1.
+
+Koristi se za poređenje fuzzy skupova i kad je potrebno da sistem bude "osjetljiviji".
+
+c) Šta je fuzzy zaključivanje?
+Fuzzy zaključivanje je proces donošenja odluka na osnovu fuzzy pravila.
+
+Koraci:
+
+Fazifikacija ulaza
+
+Primjena fuzzy pravila ("Ako je temperatura topla, onda smanji grijanje")
+
+Kombinovanje rezultata (kompozicija)
+
+Defazifikacija rezultata
+
+Koristi se npr. u pametnim uređajima, navigaciji, klimatizaciji.
+
+d) Šta je agregacija fuzzy pravila?
+Agregacija je proces kombinovanja izlaza svih fuzzy pravila u jedan zajednički fuzzy skup.
+
+Najčešći načini agregacije:
+
+Maksimum – uzima se najveća vrijednost
+
+Zbir – sabiraju se rezultati
+
+Prosjek
+
+Agregacija omogućava da sistem uzme u obzir više pravila istovremeno.
